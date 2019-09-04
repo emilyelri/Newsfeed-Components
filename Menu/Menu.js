@@ -49,6 +49,12 @@ function createMenu(arr) {
   menuButton.addEventListener('click', (e) => {
     console.log('menu opened');
     menu.classList.toggle("menu--open");
+    if (menu.style.display === "block") {
+    TweenMax.to(menu, 1, {display: none});
+  } else {
+    TweenMax.to(menu, 1, {display: block});
+  }
+
   });
 
   // return menu
