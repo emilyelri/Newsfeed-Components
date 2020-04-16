@@ -5,11 +5,9 @@
 }
 
 .menu {
-  display: none;
-  position: fixed;
+  left: 0px;
   top: 75px;
-  left: 0;
-  width: 350px;
+  width: 0px;
   height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #81C784;
   border: 1px solid #004D40;
@@ -26,5 +24,6 @@
 }
 
 .menu--open {
-  display: block;
+  display: flex;
+  position: fixed;
 }
